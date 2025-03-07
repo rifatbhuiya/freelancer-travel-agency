@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Freelancer Travel Website Contest</title>
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Bootstrap 5.3.2 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- VenoBox -->
+    <link rel="stylesheet" href="css/venobox.min.css">
+
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="main-header">
+        <!-- Header Alert -->
+        <div class="header-alert">
+            <div class="d-flex">
+                <div class="notification-bar w-20 py-2 text-center">
+                    <p class="h-100 d-flex align-items-center justify-content-center fw-medium">Notification Bar Tag</p>
+                </div>
+                <div class="notification-content w-80 py-2 px-3 d-flex align-items-center justify-content-between">
+                    <p class="w-80 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aut quod illo vitae doloribus qui quasi inventore architecto repudiandae, cumque provident minima animi quia.</p>
+                    <div class="d-flex gap-4 align-items-center w-20 justify-content-end">
+                        <a href="#" class="d-inline-flex gap-2 align-items-center">
+                            <span class="fw-semibold">View More</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <button class="close-alert" type="button">
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <nav class="main-nav">
+            <div class="d-flex">
+                <div class="logo w-20">
+                    <a href="index.html" class="w-100 py-3 d-flex justify-content-center align-items-center h-100">
+                        <img src="images/logo.png" class="main-logo" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-items w-80">
+                    <!-- Nav Top -->
+                    <div class="nav-top px-3 py-2">
+                        <div class="d-flex justify-content-between">
+                            <ol class="d-inline-flex gap-3 align-items-center">
+                                <li>
+                                    <a href="mailto:info@travelwebsite.com" class="d-inline-flex gap-2 align-items-center">
+                                        <i class="fa-regular fa-paper-plane"></i>
+                                        <span>info@travelwebsite.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+9979851099000" class="d-inline-flex gap-2 align-items-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>+997 98510 99 000</span>
+                                    </a>
+                                </li>
+                            </ol>
+                            <ol class="d-inline-flex gap-3">
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?phone=yourNumber">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            USD
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <button class="btn w-100 text-start active">USD</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn w-100 text-start">GBP</button>
+                                            </li>
+                                            <li>
+                                                <button class="btn w-100 text-start">EUR</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button type="button" class="user-modal" data-bs-toggle="modal" data-bs-target="#userModal">
+                                        <i class="fa-regular fa-circle-user"></i>
+                                    </button>
+
+                                    <!-- User Authentication Modal -->
+                                    <div class="modal fade" id="userModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title fs-5" id="userModalLabel">User authentication</h3>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Nav Bottom -->
+                    <div class="nav-bottom px-3">
+                        <div class="d-flex justify-content-between">
+                            <ul class="nav-items d-inline-flex gap-4">
+                                <li>
+                                    <a href="index.html" class="d-inline-flex gap-2 align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                                        </svg>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="hover-dropdown position-relative">
+                                    <a href="#" class="d-inline-flex gap-1 align-items-center hover-dropdown-item">
+                                        <span>Destination</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="hover-visible">
+                                        <div class="hover-dropdown-menu position-absolute">
+                                            <div class="hover-dropdown-inside">
+                                                <h6>Dropdown items will place here!</h6>
+                                                <ul class="mt-2">
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hover-dropdown position-relative">
+                                    <a href="#" class="d-inline-flex gap-1 align-items-center hover-dropdown-item">
+                                        <span>Activities</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="hover-visible">
+                                        <div class="hover-dropdown-menu position-absolute">
+                                            <div class="hover-dropdown-inside">
+                                                <h6>Dropdown items will place here!</h6>
+                                                <ul class="mt-2">
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hover-dropdown position-relative">
+                                    <a href="#" class="d-inline-flex gap-1 align-items-center hover-dropdown-item">
+                                        <span>Support</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </a>
+                                    <div class="hover-visible">
+                                        <div class="hover-dropdown-menu position-absolute">
+                                            <div class="hover-dropdown-inside">
+                                                <h6>Dropdown items will place here!</h6>
+                                                <ul class="mt-2">
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Menu item</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-inline-flex gap-2 align-items-center">
+                                        Blogs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-inline-flex gap-2 align-items-center">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <ol class="d-inline-flex gap-3 align-items-center">
+                                <li>
+                                    <a href="#" class="d-inline-flex gap-2 align-items-center depo-action">
+                                        <span class="fw-medium">Manual Deposit</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <button type="button" class="hamburg-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                        <span class="hamburger-menu relative">
+                                            <span class="menu-bars">
+                                                <span class="menu-bar"></span>
+                                                <span class="menu-bar"></span>
+                                                <span class="menu-bar"></span>
+                                            </span>
+                                        </span>
+                                    </button>
+
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Company about</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            ...
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <main>
+        <!-- Hero area start -->
+        <section class="hero-area">
+            <div class="hero-content h-100">
+                <div class="container-xxl h-100">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-lg-8 col-xl-6 text-center">
+                            <h1>Next Adventure <br> <span>Is Waiting</span></h1>
+                            <p class="mt-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores dicta expedita libero dolores nisi voluptas obcaecati suscipit perferendis molestiae
+                            </p>
+                            <form>
+                                <div class="searchbar mt-5 position-relative">
+                                    <div class="position-relative">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input class="search-input" type="search" placeholder="Enter your keywords......">
+                                    </div>
+
+                                    <div class="searchbar-menu text-start">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="bold">Annapurna Base camp Trek</span>
+                                                    <span class="light">10 days</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="bold">Kanchenjunga Base camp Trek</span>
+                                                    <span class="light">10 days</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="bold">Annapurna Base camp Trek</span>
+                                                    <span class="light">10 days</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="bold">Kanchenjunga Base camp Trek</span>
+                                                    <span class="light">10 days</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="the-cloud">
+                <img class="cloud" src="images/cloud/cloud-01.webp" loading="lazy" alt="cloud">
+                <img class="cloud" src="images/cloud/cloud-02.webp" loading="lazy" alt="cloud">
+                <img class="cloud" src="images/cloud/cloud-03.webp" loading="lazy" alt="cloud">
+                <img class="cloud" src="images/cloud/cloud-04.webp" loading="lazy" alt="cloud">
+            </div>
+
+            <div class="video">
+                <a data-ratio="16x9" data-title="Adventure touring!" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=es4x5R-rV9s" class="w-100 modal-hero-video">
+                    <div class="video-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play" class="svg-inline--fa fa-play " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path fill="currentColor" d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <button class="support-btn">
+                <span>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    Handshake with us for the best services!
+                </span>
+            </button>
+        </section>
+        <!-- Hero area end -->
+    </main>
+    <!-- Main Content End -->
+    
+    <!-- Jquery Library -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- Bootstrap 5.3.2 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- VenoBox -->
+    <script src="js/venobox.min.js"></script>
+     <script>
+        new VenoBox({
+            selector: ".modal-hero-video",
+            titleattr: 'data-title'
+        });
+    </script>
+
+    <!-- Main Script Sheet -->
+    <script src="js/script.js"></script>
+</body>
+</html>
