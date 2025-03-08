@@ -1,26 +1,38 @@
 (function () {
-    "use-strict";
+    "use strict";
 
-    $('.close-alert').on('click', function () {
-        $('.header-alert').hide(500);
+    // Close alert functionality
+    document.querySelectorAll(".close-alert").forEach((button) => {
+        button.addEventListener("click", function () {
+            const alertBox = document.querySelector(".header-alert");
+            if (alertBox) {
+                alertBox.style.display = "none";
+            }
+        });
     });
 
     function heroSearchBar() {
-        $(".search-input").on("input", function () {
-            let inputVal = $(this).val().trim();
+        const searchInput = document.querySelector(".search-input");
+        const searchMenu = document.querySelector(".searchbar-menu");
+
+        if (!searchInput || !searchMenu) return;
+
+        searchInput.addEventListener("input", function () {
+            let inputVal = searchInput.value.trim();
 
             if (inputVal.length > 0) {
-                $(".searchbar-menu").show(500);
+                searchMenu.style.display = "block";
             } else {
-                $(".searchbar-menu").hide(500);
+                searchMenu.style.display = "none";
             }
         });
 
-        $(document).on("click", function (e) {
-            if (!$(e.target).closest(".searchbar, .searchbar-menu").length) {
-                $(".searchbar-menu").hide(500);
+        document.addEventListener("click", function (e) {
+            if (!e.target.closest(".searchbar") && !e.target.closest(".searchbar-menu")) {
+                searchMenu.style.display = "none";
             }
         });
     }
+
     heroSearchBar();
-})(jQuery());
+})();

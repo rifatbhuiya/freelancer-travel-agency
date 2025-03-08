@@ -112,12 +112,6 @@ body {
 
 .main-header {
     box-shadow: .5px .5px 3px 0 rgba(0, 0, 0, 0.2);
-    position: sticky;
-    z-index: 99;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--white_color);
 }
 
 .main-header .header-alert .notification-bar {
